@@ -1,1 +1,270 @@
-/* your code here */
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        padding: 50px 0;
+      }
+
+      footer {
+        background-color: #140B5C;
+        color: #fff;
+        width: 100%;
+      }
+
+      footer .content {
+        max-width: 1350px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      footer .content .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .content .top .logo-details {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      .content .top .media-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .top .media-icons a {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .top .media-icons a.facebook {
+        background: #4267B2;
+      }
+
+      .top .media-icons a.twitter {
+        background: #1DA1F2;
+      }
+
+      .top .media-icons a.instagram {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+      }
+
+      .top .media-icons a.linkedin {
+        background: #0077B5;
+      }
+
+      .top .media-icons a.youtube {
+        background: #FF0000;
+      }
+
+      .top .media-icons a:hover {
+        transform: scale(1.1);
+        border-color: #fff;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+      }
+
+      .content .link-boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      footer .content .link-boxes .box {
+        width: calc(100% / 5 - 30px);
+        min-width: 200px;
+      }
+
+      .content .link-boxes .box .link_name {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .content .link-boxes .box .link_name::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 35px;
+        background: #fff;
+      }
+
+      .content .link-boxes .box li {
+        margin: 6px 0;
+        list-style: none;
+      }
+
+      .content .link-boxes .box li a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: all 0.4s ease;
+      }
+
+      .content .link-boxes .box li a:hover {
+        opacity: 1;
+        text-decoration: underline;
+        padding-left: 5px;
+      }
+
+      .content .link-boxes .input-box {
+        margin-right: 55px;
+      }
+
+      .link-boxes .input-box input {
+        height: 40px;
+        width: calc(100% + 55px);
+        outline: none;
+        border: 2px solid #AFAFB6;
+        background: #140B5C;
+        border-radius: 4px;
+        padding: 0 15px;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 5px;
+      }
+
+      .link-boxes .input-box input::placeholder {
+        color: #AFAFB6;
+        font-size: 16px;
+      }
+
+      .link-boxes .input-box input[type="button"] {
+        background: #fff;
+        color: #140B5C;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 4px 0;
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.4s ease;
+      }
+
+      .input-box input[type="button"]:hover {
+        opacity: 1;
+      }
+
+      footer .bottom-details {
+        width: 100%;
+        background: #0F0844;
+      }
+
+      footer .bottom-details .bottom_text {
+        max-width: 1350px;
+        margin: auto;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .bottom-details .bottom_text span,
+      .bottom-details .bottom_text a {
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        opacity: 0.8;
+        text-decoration: none;
+      }
+
+      .bottom-details .bottom_text a:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      .contact-info {
+        color: #fff;
+        opacity: 0.9;
+      }
+
+      .contact-info p {
+        margin: 8px 0;
+        font-size: 14px;
+      }
+
+      .contact-info .phone {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        footer .content .link-boxes {
+          flex-wrap: wrap;
+        }
+        footer .content .link-boxes .input-box {
+          width: 40%;
+          margin-top: 10px;
+        }
+        footer .content .link-boxes .box {
+          width: calc(100% / 3 - 30px);
+        }
+      }
+
+      @media (max-width: 700px) {
+        footer .content .top {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        
+        .content .top .logo-details {
+          margin-bottom: 20px;
+        }
+
+        footer .content .link-boxes .box {
+          width: calc(100% / 2 - 30px);
+        }
+        footer .content .link-boxes .input-box {
+          width: 60%;
+        }
+      }
+
+      @media (max-width: 520px) {
+        footer .content .link-boxes .box {
+          width: 100%;
+        }
+        footer .content .link-boxes .input-box {
+          width: 100%;
+        }
+        
+        .bottom-details .bottom_text {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
