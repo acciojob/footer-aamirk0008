@@ -11,7 +11,7 @@
       }
 
       footer {
-        background-color: #140B5C;
+        background-color: black;
         color: #fff;
         width: 100%;
       }
@@ -178,7 +178,7 @@
 
       footer .bottom-details {
         width: 100%;
-        background: #0F0844;
+        background: gray;
       }
 
       footer .bottom-details .bottom_text {
